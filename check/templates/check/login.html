@@ -14,12 +14,11 @@
                     <h1>签到系统</h1>  
                     <form action="" method="post">  {#action still empty#}
                         {% csrf_token %}
-                        <input type="text" required="required" placeholder="用户名" name="name">
-                        <input type="password" required="required" placeholder="密码" name="password">
+                        {{ form }}
                         <div class="record">
                             <input class="rec" type="checkbox" value="1" name="record" id="rempss">记住密码
                         </div>
-                        <button id="mainPage_trigger" class="but">登录</button>    
+                        <button id="mainPage_trigger" class="but">登录</button>
                     </form>
                 </div>  
             </div>
