@@ -6,24 +6,24 @@ body{
 	height: 100vh;
 
 }
-.back
+.background
 {
 	height: 100vh;
 	overflow: hidden;
 }
 .Login{
-    background: url(../img/background.jpg) no-repeat;
-    width: 2770px;
-    background-size: cover;
+	background: url(background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	margin: 0;
-	height: 1080px;
+	height: 100%;
 	
 }
 #login{
 	width: 20vw;
 	height: inherit;
 	float:right;
-	background: rgba(0,0,0,0.75);
+	background: rgba(0,0,0,0.4);
 	margin: auto 0;
 	text-align: center;
 }
@@ -36,12 +36,12 @@ body{
 	margin:5px;
     letter-spacing: 10px;
     color: white;      
-}   
+}
 
 input{   
     width: 12vw;   
     height: 18px;   
-    margin-bottom: 0;
+    margin-bottom: 0px;
     margin-top:20px;    
     outline: none;   
     padding: 18px 10px;	   
@@ -73,7 +73,8 @@ input:last-child{
     border-radius: 6px;   
     margin: 0 auto;
     box-sizing: border-box;
-    outline: none;   
+    outline: none;
+    box-shadow: 1px 2px 5px 1px #27293a;    
 }
 
 .rec{
@@ -101,8 +102,8 @@ span{
 	height: 100%;
 	left: 0;
 	color: white;
-	font-family: "微软雅黑", serif;
-	background: rgb(0,0,0);
+	font-family: "微软雅黑";
+	background: #0b5663;
 	top: 100vh;
 	/*box-shadow: 0px 1px 4px 2px #8a2d2d*/
 }
@@ -116,8 +117,8 @@ span{
 ul
 {
 	list-style-type:none;
-	padding: 0;
-	margin: 5px auto;
+	padding: 0px;
+	margin: 5 auto;
 	text-align: center; 
 }
 .photo
@@ -140,8 +141,7 @@ ul
 	top: 0;
 	left: -100vw;
 	width: 100vw;
-	background: rgba(0, 0, 0, 0.75);
-
+	background: #01788c;
 }
 
 .buttom{
@@ -156,12 +156,12 @@ ul
 	margin-right: 0.5%;
 	background-color: rgb(81, 99, 97 );
 	/*background: transparent;*/
-    border: 0;
+    border: 0px;   
     color: #fff;   
     font-size: 30px;   
-    border-radius: 100%;
+    border-radius: 30%;
     outline: none;
-    box-shadow: 0 1px 4px 2px #8a2d2d;
+    box-shadow: 0px 1px 4px 2px #8a2d2d;
 }
 
 .buttom2{
@@ -170,19 +170,200 @@ ul
 	margin: 15% 0.5%;
 	background-color: rgb(81, 99, 97);
 	/*background: transparent;  */
-    border: 0;
+    border: 0px ;   
     color: #fff;   
     font-size: 30px;   
-    border-radius: 100%;
+    border-radius: 30%;
     outline: none;
-    box-shadow: 0 1px 4px 2px #8a2d2d
+    box-shadow: 0px 1px 4px 2px #8a2d2d
 }
 
+.buttom3{
+	height: 20vh;
+	width: 20vh;
+	margin: 15% 0.5%;
+	background-color: rgb(81, 99, 97);
+	/*background: transparent;  */
+    border: 0px ;   
+    color: #fff;   
+    font-size: 30px;   
+    border-radius: 30%;
+    outline: none;
+    box-shadow: 0px 1px 4px 2px #8a2d2d
+}
+
+
+.qiandao{
+	position: fixed;
+	top: -100vh;
+	left:20vw;
+	width: 80vw;
+	height: 100vh;
+	background: #006a7b;
+}
+
+.qiandao1{
+	/*width: 60vw;
+	height: 60vh;*/
+	height: 80vh;
+	line-height: 130vh;
+	text-align:center;
+	vertical-align: middle;
+}
+
+#qrcode{
+	display: inline-block;
+}
+
+
+.buqian{
+	position: fixed;
+	bottom:-100vh;
+	left:20vw;
+	width: 80vw;
+	height: 100vh;
+	background: #006a7b;
+}
+
+.bq{
+	text-align:center;
+	margin: 10% 0;
+}
+
+#check{
+	margin-top: 2%;
+	display: inline-block;
+}
+#student_num{
+	width: 20vw;
+}
+.guanli{
+	position: fixed;
+	//left:20vw;
+	right: -100vw;
+	width: 80vw;
+	height: 100vh;
+	background: #006a7b;
+}
+
+#glbuts{
+	margin-top: 8%;
+	margin-left: 1%;
+}
+.glbut{
+	height: 10vh;
+	width: 15vw;
+	margin-top: 1%;
+	margin-left: 5%;
+	margin-right: 0.5%;
+	background-color: rgb(81, 99, 97 );
+	/*background: transparent;*/
+    border: 0px;   
+    color: #fff;   
+    font-size: 30px;   
+    border-radius: 10%;
+    outline: none;
+    box-shadow: 0px 1px 4px 2px #8a2d2d;
+}
+
+.back{
+	height: 10vh;
+	width: 20vw;
+	float:right;
+	text-align: center;
+}
+
+.backbutton{
+	width:12vw;
+	height:40px;
+	display: inline-block;   
+    background-color: rgb(81, 99, 97);   
+    border: 0px solid #3762bc;   
+    color: #fff;   
+    font-size: 18px;   
+    line-height: normal;   
+    border-radius: 6px;   
+    margin-top: 10%;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: 1px 2px 5px 1px #27293a; 
+}
+
+#student_mes{
+	display: inline-block;
+}
+
+
+#rollback{
+	width:5vw;
+	height: 25px;
+	display: inline-block;
+	padding: 0 0; 
+	margin-top: 0;
+}
+
+
+#button_bq{
+	display: inline-block;
+}
 .buttom1:hover
 {
-	background-color: rgb(11, 110, 72); 
+	background-color: rgb(11, 110, 72);
+	box-shadow: 0px 1px 1px 1px #8a2d2d;
 }
 .buttom2:hover
 {
-	background-color: rgb(11, 110, 72); 
+	background-color: rgb(11, 110, 72);
+	box-shadow: 0px 1px 1px 1px #8a2d2d; 
 }
+.buttom3:hover
+{
+	background-color: rgb(11, 110, 72);
+	box-shadow: 0px 1px 1px 1px #8a2d2d;
+}
+.backbutton:hover
+{
+	background-color: rgb(11, 110, 72);
+	box-shadow: 1px 2px 5px 0px #27293a;
+}
+.but:hover
+{
+	box-shadow: 1px 2px 5px 0px #27293a;
+}
+.glbut:hover
+{
+	background-color: rgb(11, 110, 72);
+}
+.but:active
+{
+	background-color: rgb(1, 0, 2);
+}
+.buttom1:active
+{
+	background-color: rgb(1, 0, 2);
+}
+.buttom2:active
+{
+	background-color: rgb(1, 0, 2);
+}
+.buttom3:active
+{
+	background-color: rgb(1, 0, 2);
+}
+.backbutton:active
+{
+	background-color: rgb(1, 0, 2);
+}
+.but1:active{
+	background-color: rgb(1, 0, 2);
+}
+.glbut:active
+{
+	background-color: rgb(1, 0, 2);
+}
+.photo
+{
+	background: url(photo.jpg);
+	background-size: cover;
+}
+

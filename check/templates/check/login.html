@@ -2,60 +2,75 @@
 <html lang="en">  
 <head>  
     <meta charset="UTF-8">  
-    <title>Login</title>
-    {% load staticfiles %}
-    <link rel="stylesheet" type="text/css" href="{%  static "check/css/login.css" %}"/>
+    <title>Login</title>  
+    <link rel="stylesheet" type="text/css" href="登陆.css"/>  
 </head>  
 <body>
-    <div class="back">  
+    <div class="background">  
         <div class="Login">
             <div id="login">
                 <div id="login1">
                     <h1>签到系统</h1>  
-                    <form action="" method="post">  {#action still empty#}
-                        {% csrf_token %}
-                        <input type="text" required="required" placeholder="用户名" name="name">
-                        <input type="password" required="required" placeholder="密码" name="password">
+                    <div>  
+                        <input type="text" required="required" placeholder="用户名" name="u" id='u'></input>  
+                        <input type="password" required="required" placeholder="密码" name="p" id='p' value=""></input>
                         <div class="record">
                             <input class="rec" type="checkbox" value="1" name="record" id="rempss">记住密码
                         </div>
                         <button id="mainPage_trigger" class="but">登录</button>    
-                    </form>
+                    </div>
                 </div>  
             </div>
         </div> 
-        <div class="mainPage">  
+        <div class="mainPage">
             <div class="buttom">
                 <button class="buttom1" type="button">发起签到</button>
                 <button class="buttom2" type="button">补签</button>
-                <button class="buttom2" type="button">签到管理</button>
-            </div> 
+                <button class="buttom3" type="button">签到管理</button>
+            </div>
+        </div>
+        <div class="qiandao">
+            <div class="back">
+            <button class="backbutton" class="but" id="backbutton1" type="button">返回</button>
+            </div>
+            <div class="qiandao1">
+        	   <div id="qrcode"></div>
+                </div>
+            
+        </div>
+        <div class="buqian">
+            <div class="back">
+            <button class="backbutton" class="but1" id="backbutton2" type="button">返回</button>
+            </div>
+            <div class="bq">
+                <input type="text" class="input_bq" id="student_num" name="student_num"></input>
+                <button id="button_bq" class="but">补签</button></br>
+                <ul id="check">
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="guanli">
+            <div class="back">
+            <button class="backbutton" id="backbutton3" type="button">返回</button>
+                </div>
+            <div id="glbuts">
+            <button class="glbut" id="present">查看所有已签到学生</button><br/>
+            <button class="glbut" id="absent">查看所有未签到学生</button>
+            </div>
         </div>
         <div id="main">
-                <div id="message">
-                    <ul>
+                <div>
+                    <ul id="message">
                         <li  class="photo"></li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
-                        <li  class="mes">各种信息</li>
                     </ul> 
                 </div>
         </div>
     </div>
-        {% load static %}
-        <script src="{% static "check/js/jquery.js" %}"></script>
-        <script src="{% static "check/js/main.js" %}"></script>
+        <script src="jquery.js"></script>
+        <script src="jquery-1.10.2.min.js"></script>
+        <script src="jquery.qrcode.min.js"></script>
+         <script src="main.js"></script>
+
     </body>  
     </html>  
